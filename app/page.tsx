@@ -32,8 +32,8 @@ Car Catalogue
 {!isDataEmpty ?(
   <section>
   <div className="home__cars-wrapper">
-{allCars?.map((car)=>(
-  <CarCard car={car} />
+{allCars?.map((car,id)=>(
+  <CarCard car={car} key={id} />
 )
 )}
   </div>
